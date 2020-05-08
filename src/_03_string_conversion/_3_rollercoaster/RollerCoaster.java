@@ -13,9 +13,19 @@ public class RollerCoaster {
 		String heightToRide = JOptionPane.showInputDialog("Enter your height in inches.");
 		int heightAsInt = Integer.parseInt(heightToRide);
 		// Uncomment the line below...
-			if( heightAsInt > 42 ) { 
+			if( heightAsInt >= 48 ) { 
+				JOptionPane.showMessageDialog(null, "Hurray! You are tall enough to ride the coaster alone!");
 				
-				
+			}
+
+			
+			if(heightAsInt < 42 ) {
+				JOptionPane.showMessageDialog(null,"You have to be at least 42 inches to ride the roller coaster!");
+	}
+			if (heightAsInt > 42){
+				if(heightAsInt < 48) {
+				JOptionPane.showMessageDialog(null,"You can ride the coaster with someone else!");
+			}
 			}
 		
 		// Do you see the heightToRide > 42 underlined red? That is because you are comparing a STRING to an INTEGER.
@@ -29,4 +39,10 @@ public class RollerCoaster {
 		// "You can ride the coaster with someone else!" 
 	
 		// 6) else print: "You must be at least 42 inches tall to ride the roller coaster pal!"
-} 
+}
+}
+
+	
+	
+	
+ 
